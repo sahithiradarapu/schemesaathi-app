@@ -1,0 +1,226 @@
+[
+  {
+    "id": "aarogyasri",
+    "name": {
+      "en": "Dr. YSR / Rajiv Aarogyasri Health Care Trust",
+      "hi": "डॉ. वाईएसआर / राजीव आरोग्यश्री स्वास्थ्य देखभाल ट्रस्ट",
+      "te": "డాక్టర్ వైఎస్ఆర్ / రాజీవ్ ఆరోగ్యశ్రీ హెల్త్ కేర్ ట్రస్ట్"
+    },
+    "shortName": { "en": "Aarogyasri", "hi": "आरोग्यश्री", "te": "ఆరోగ్యశ్రీ" },
+    "type": "state",
+    "states": ["Telangana", "Andhra Pradesh"],
+    "description": {
+      "en": "Free treatment scheme run by the Telangana government for BPL and low-income families, covering serious illnesses that need hospitalization and surgery.",
+      "hi": "तेलंगाना सरकार द्वारा चलाई जाने वाली मुफ्त इलाज योजना, जो बीपीएल और कम आय वाले परिवारों के लिए है, जिसमें अस्पताल में भर्ती और सर्जरी की आवश्यकता वाली गंभीर बीमारियां शामिल हैं।",
+      "te": "తెలంగాణ ప్రభుత్వం నిర్వహించే ఉచిత చికిత్స పథకం, ఇది బిపిఎల్ మరియు తక్కువ ఆదాయం గల కుటుంబాల కోసం, ఆసుపత్రిలో చేరడం మరియు శస్త్రచికిత్స అవసరమైన తీవ్రమైన అనారోగ్యాలను కవర్ చేస్తుంది."
+    },
+    "eligibility": {
+      "maxAnnualIncome": 500000,
+      "requiresRationCard": true,
+      "acceptedRationCardTypes": ["white", "pink", "annapurna"],
+      "residentStatesOnly": true,
+      "govtEmployeeExcluded": true,
+      "alreadyInsuredExcluded": false
+    },
+    "coverageAmount": {
+      "en": "Up to ₹5 lakh per family per year (some procedures like transplants covered beyond this limit)",
+      "hi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक (प्रत्यारोपण जैसी कुछ प्रक्रियाएं इस सीमा से अधिक कवर की जाती हैं)",
+      "te": "కుటుంబానికి సంవత్సరానికి ₹5 లక్షల వరకు (మార్పిడి వంటి కొన్ని ప్రక్రియలు ఈ పరిమితి కంటే ఎక్కువ కవర్ చేయబడతాయి)"
+    },
+    "requiredDocuments": [
+      { "en": "Aarogyasri health card, or white/pink ration card", "hi": "आरोग्यश्री हेल्थ कार्ड, या सफेद/गुलाबी राशन कार्ड", "te": "ఆరోగ్యశ్రీ హెల్త్ కార్డ్, లేదా తెలుపు/గులాబీ రేషన్ కార్డ్" },
+      { "en": "Aadhaar card of the patient", "hi": "मरीज़ का आधार कार्ड", "te": "రోగి యొక్క ఆధార్ కార్డ్" },
+      { "en": "Income certificate (only if health card not available)", "hi": "आय प्रमाण पत्र (केवल यदि हेल्थ कार्ड उपलब्ध न हो)", "te": "ఆదాయ ధృవీకరణ పత్రం (హెల్త్ కార్డ్ అందుబాటులో లేకపోతే మాత్రమే)" },
+      { "en": "Referral slip from a network hospital or PHC doctor", "hi": "नेटवर्क अस्पताल या पीएचसी डॉक्टर से रेफरल स्लिप", "te": "నెట్‌వర్క్ ఆసుపత్రి లేదా పిహెచ్‌సి డాక్టర్ నుండి రిఫరల్ స్లిప్" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "burns", "neonatal", "polytrauma", "general_surgery"
+    ],
+    "officialUrl": "https://ysraarogyasri.ap.gov.in/",
+    "helpline": "104"
+  },
+  {
+    "id": "pmjay",
+    "name": {
+      "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+      "hi": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना (पीएम-जय)",
+      "te": "ఆయుష్మాన్ భారత్ - ప్రధాన మంత్రి జన్ ఆరోగ్య యోజన (పిఎం-జేఏవై)"
+    },
+    "shortName": { "en": "PM-JAY / Ayushman Bharat", "hi": "पीएम-जय / आयुष्मान भारत", "te": "పిఎం-జేఏవై / ఆయుష్మాన్ భారత్" },
+    "type": "central",
+    "states": ["all"],
+    "description": {
+      "en": "National health insurance scheme giving free hospitalization cover to economically vulnerable families identified through the SECC database. Note: Telangana implements this jointly with Aarogyasri for overlapping families.",
+      "hi": "राष्ट्रीय स्वास्थ्य बीमा योजना जो एसईसीसी डेटाबेस के माध्यम से पहचाने गए आर्थिक रूप से कमजोर परिवारों को मुफ्त अस्पताल भर्ती कवर देती है। ध्यान दें: तेलंगाना इसे ओवरलैप होने वाले परिवारों के लिए आरोग्यश्री के साथ मिलकर लागू करता है।",
+      "te": "SECC డేటాబేస్ ద్వారా గుర్తించబడిన ఆర్థికంగా బలహీన కుటుంబాలకు ఉచిత ఆసుపత్రి కవరేజీని ఇచ్చే జాతీయ ఆరోగ్య బీమా పథకం. గమనిక: తెలంగాణ దీన్ని అతివ్యాప్తి అయ్యే కుటుంబాల కోసం ఆరోగ్యశ్రీతో కలిపి అమలు చేస్తుంది."
+    },
+    "eligibility": {
+      "maxAnnualIncome": null,
+      "requiresSECCListing": true,
+      "acceptedRationCardTypes": ["white", "pink", "antyodaya"],
+      "residentStatesOnly": false,
+      "govtEmployeeExcluded": true,
+      "alreadyInsuredExcluded": true
+    },
+    "coverageAmount": {
+      "en": "Up to ₹5 lakh per family per year",
+      "hi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक",
+      "te": "కుటుంబానికి సంవత్సరానికి ₹5 లక్షల వరకు"
+    },
+    "requiredDocuments": [
+      { "en": "Ayushman Bharat / PM-JAY card or Aadhaar", "hi": "आयुष्मान भारत / पीएम-जय कार्ड या आधार", "te": "ఆయుష్మాన్ భారత్ / పిఎం-జేఏవై కార్డ్ లేదా ఆధార్" },
+      { "en": "Ration card", "hi": "राशन कार्ड", "te": "రేషన్ కార్డ్" },
+      { "en": "SECC family ID (verify on the official portal)", "hi": "एसईसीसी परिवार आईडी (आधिकारिक पोर्टल पर सत्यापित करें)", "te": "SECC కుటుంబ ఐడి (అధికారిక పోర్టల్‌లో నిర్ధారించుకోండి)" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "burns", "neonatal", "general_surgery"
+    ],
+    "officialUrl": "https://pmjay.gov.in/",
+    "helpline": "14555"
+  },
+  {
+    "id": "ts_ehs",
+    "name": {
+      "en": "Telangana Employees & Journalists Health Scheme (EHS)",
+      "hi": "तेलंगाना कर्मचारी और पत्रकार स्वास्थ्य योजना (ईएचएस)",
+      "te": "తెలంగాణ ఉద్యోగులు మరియు జర్నలిస్టుల ఆరోగ్య పథకం (ఇహెచ్ఎస్)"
+    },
+    "shortName": { "en": "TS EHS", "hi": "टीएस ईएचएस", "te": "టిఎస్ ఇహెచ్ఎస్" },
+    "type": "state",
+    "states": ["Telangana"],
+    "description": {
+      "en": "Cashless health scheme for Telangana state government employees, pensioners, and accredited journalists and their dependents, delivered through the Aarogyasri Trust hospital network.",
+      "hi": "तेलंगाना राज्य सरकार के कर्मचारियों, पेंशनभोगियों, मान्यता प्राप्त पत्रकारों और उनके आश्रितों के लिए कैशलेस स्वास्थ्य योजना, जो आरोग्यश्री ट्रस्ट अस्पताल नेटवर्क के माध्यम से दी जाती है।",
+      "te": "ఆరోగ్యశ్రీ ట్రస్ట్ ఆసుపత్రి నెట్‌వర్క్ ద్వారా అందించబడే తెలంగాణ రాష్ట్ర ప్రభుత్వ ఉద్యోగులు, పెన్షనర్లు, గుర్తింపు పొందిన జర్నలిస్టులు మరియు వారి ఆధారితుల కోసం క్యాష్‌లెస్ ఆరోగ్య పథకం."
+    },
+    "eligibility": {
+      "stateGovtEmployeeOnly": true,
+      "pensionerAllowed": true,
+      "journalistAllowed": true,
+      "residentStatesOnly": true
+    },
+    "coverageAmount": {
+      "en": "Cashless treatment up to the scheme's package rates at network hospitals",
+      "hi": "नेटवर्क अस्पतालों में योजना की पैकेज दरों तक कैशलेस उपचार",
+      "te": "నెట్‌వర్క్ ఆసుపత్రులలో పథకం ప్యాకేజీ రేట్ల వరకు క్యాష్‌లెస్ చికిత్స"
+    },
+    "requiredDocuments": [
+      { "en": "EHS card or employee ID card", "hi": "ईएचएस कार्ड या कर्मचारी पहचान पत्र", "te": "ఇహెచ్ఎస్ కార్డ్ లేదా ఉద్యోగి గుర్తింపు కార్డ్" },
+      { "en": "Pension Payment Order (for pensioners)", "hi": "पेंशन भुगतान आदेश (पेंशनभोगियों के लिए)", "te": "పెన్షన్ పేమెంట్ ఆర్డర్ (పెన్షనర్ల కోసం)" },
+      { "en": "Press accreditation card (for journalists)", "hi": "प्रेस मान्यता कार्ड (पत्रकारों के लिए)", "te": "ప్రెస్ అక్రిడిటేషన్ కార్డ్ (జర్నలిస్టుల కోసం)" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "general_surgery", "maternity"
+    ],
+    "officialUrl": "https://ehf.telangana.gov.in/",
+    "helpline": "040-27852001"
+  },
+  {
+    "id": "esi",
+    "name": {
+      "en": "Employees' State Insurance (ESI) Scheme",
+      "hi": "कर्मचारी राज्य बीमा (ईएसआई) योजना",
+      "te": "ఉద్యోగుల రాష్ట్ర బీమా (ఇఎస్ఐ) పథకం"
+    },
+    "shortName": { "en": "ESI", "hi": "ईएसआई", "te": "ఇఎస్ఐ" },
+    "type": "central",
+    "states": ["all"],
+    "description": {
+      "en": "Health insurance and medical benefits for workers earning below a wage ceiling in covered establishments (factories, shops with enough employees), and their dependents.",
+      "hi": "कवर की गई प्रतिष्ठानों (फैक्ट्री, पर्याप्त कर्मचारियों वाली दुकानें) में एक निश्चित वेतन सीमा से कम कमाने वाले श्रमिकों और उनके आश्रितों के लिए स्वास्थ्य बीमा और चिकित्सा लाभ।",
+      "te": "కవర్ చేయబడిన సంస్థలలో (ఫ్యాక్టరీలు, తగినంత మంది ఉద్యోగులు ఉన్న దుకాణాలు) వేతన పరిమితి కంటే తక్కువ సంపాదించే కార్మికులు మరియు వారి ఆధారితుల కోసం ఆరోగ్య బీమా మరియు వైద్య ప్రయోజనాలు."
+    },
+    "eligibility": {
+      "maxMonthlyWage": 21000,
+      "requiresESICard": true,
+      "employmentRequired": true,
+      "residentStatesOnly": false,
+      "govtEmployeeExcluded": false,
+      "alreadyInsuredExcluded": false
+    },
+    "coverageAmount": {
+      "en": "Full medical care with no fixed ceiling for the insured worker and family",
+      "hi": "बीमित श्रमिक और परिवार के लिए बिना किसी निश्चित सीमा के पूर्ण चिकित्सा देखभाल",
+      "te": "బీమా చేయబడిన కార్మికుడు మరియు కుటుంబానికి స్థిర పరిమితి లేకుండా పూర్తి వైద్య సంరక్షణ"
+    },
+    "requiredDocuments": [
+      { "en": "ESI Pehchan card", "hi": "ईएसआई पहचान कार्ड", "te": "ఇఎస్ఐ పెహచాన్ కార్డ్" },
+      { "en": "Employer certificate confirming ESI coverage", "hi": "ईएसआई कवरेज की पुष्टि करने वाला नियोक्ता प्रमाण पत्र", "te": "ఇఎస్ఐ కవరేజీని నిర్ధారించే యజమాని ధృవీకరణ పత్రం" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "general_surgery", "maternity"
+    ],
+    "officialUrl": "https://www.esic.gov.in/",
+    "helpline": "1800-11-2526"
+  },
+  {
+    "id": "cghs",
+    "name": {
+      "en": "Central Government Health Scheme (CGHS)",
+      "hi": "केंद्रीय सरकार स्वास्थ्य योजना (सीजीएचएस)",
+      "te": "కేంద్ర ప్రభుత్వ ఆరోగ్య పథకం (సిజిహెచ్ఎస్)"
+    },
+    "shortName": { "en": "CGHS", "hi": "सीजीएचएस", "te": "సిజిహెచ్ఎస్" },
+    "type": "central",
+    "states": ["all"],
+    "description": {
+      "en": "Comprehensive healthcare for serving and retired central government employees and their dependents, at CGHS wellness centres and empanelled hospitals.",
+      "hi": "सेवारत और सेवानिवृत्त केंद्र सरकार के कर्मचारियों और उनके आश्रितों के लिए सीजीएचएस वेलनेस सेंटर और सूचीबद्ध अस्पतालों में व्यापक स्वास्थ्य सेवा।",
+      "te": "సిజిహెచ్ఎస్ వెల్‌నెస్ సెంటర్లు మరియు జాబితా చేయబడిన ఆసుపత్రులలో సేవలో ఉన్న మరియు పదవీ విరమణ పొందిన కేంద్ర ప్రభుత్వ ఉద్యోగులు మరియు వారి ఆధారితుల కోసం సమగ్ర ఆరోగ్య సంరక్షణ."
+    },
+    "eligibility": {
+      "centralGovtEmployeeOnly": true,
+      "pensionerAllowed": true,
+      "residentStatesOnly": false
+    },
+    "coverageAmount": {
+      "en": "Full treatment cost at CGHS-empanelled hospitals as per approved rates",
+      "hi": "अनुमोदित दरों के अनुसार सीजीएचएस-सूचीबद्ध अस्पतालों में पूर्ण उपचार लागत",
+      "te": "ఆమోదించబడిన రేట్ల ప్రకారం సిజిహెచ్ఎస్-జాబితా చేయబడిన ఆసుపత్రులలో పూర్తి చికిత్స ఖర్చు"
+    },
+    "requiredDocuments": [
+      { "en": "CGHS card", "hi": "सीजीएचएस कार्ड", "te": "సిజిహెచ్ఎస్ కార్డ్" },
+      { "en": "Government ID card or Pension Payment Order", "hi": "सरकारी पहचान पत्र या पेंशन भुगतान आदेश", "te": "ప్రభుత్వ గుర్తింపు కార్డ్ లేదా పెన్షన్ పేమెంట్ ఆర్డర్" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "general_surgery"
+    ],
+    "officialUrl": "https://cghs.gov.in/",
+    "helpline": "1800-11-8888"
+  },
+  {
+    "id": "star_health_card",
+    "name": {
+      "en": "Star Health Assured Card (Private Insurance)",
+      "hi": "स्टार हेल्थ एश्योर्ड कार्ड (निजी बीमा)",
+      "te": "స్టార్ హెల్త్ అష్యూర్డ్ కార్డ్ (ప్రైవేట్ బీమా)"
+    },
+    "shortName": { "en": "Star Health Card", "hi": "स्टार हेल्थ कार्ड", "te": "స్టార్ హెల్త్ కార్డ్" },
+    "type": "private",
+    "states": ["all"],
+    "description": {
+      "en": "Private cashless health insurance card. This only applies if the patient has already purchased a Star Health policy — it is not a free government scheme.",
+      "hi": "निजी कैशलेस स्वास्थ्य बीमा कार्ड। यह केवल तभी लागू होता है जब मरीज़ ने पहले से स्टार हेल्थ पॉलिसी खरीदी हो — यह कोई मुफ्त सरकारी योजना नहीं है।",
+      "te": "ప్రైవేట్ క్యాష్‌లెస్ ఆరోగ్య బీమా కార్డ్. రోగి ఇప్పటికే స్టార్ హెల్త్ పాలసీని కొనుగోలు చేసి ఉంటే మాత్రమే ఇది వర్తిస్తుంది — ఇది ఉచిత ప్రభుత్వ పథకం కాదు."
+    },
+    "eligibility": {
+      "requiresExistingPolicy": true,
+      "policyName": "star_health",
+      "residentStatesOnly": false
+    },
+    "coverageAmount": {
+      "en": "As per the sum insured chosen in the individual's policy",
+      "hi": "व्यक्ति की पॉलिसी में चुनी गई बीमित राशि के अनुसार",
+      "te": "వ్యక్తి పాలసీలో ఎంచుకున్న బీమా మొత్తం ప్రకారం"
+    },
+    "requiredDocuments": [
+      { "en": "Star Health policy card and policy number", "hi": "स्टार हेल्थ पॉलिसी कार्ड और पॉलिसी नंबर", "te": "స్టార్ హెల్త్ పాలసీ కార్డ్ మరియు పాలసీ నంబర్" },
+      { "en": "Copy of the policy document", "hi": "पॉलिसी दस्तावेज़ की प्रति", "te": "పాలసీ డాక్యుమెంట్ కాపీ" }
+    ],
+    "coveredProcedureCategories": [
+      "cardiac", "cancer", "kidney", "neurology", "orthopedic", "general_surgery", "maternity"
+    ],
+    "officialUrl": "https://www.starhealth.in/",
+    "helpline": "1800-425-2255"
+  }
+]

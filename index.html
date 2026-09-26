@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SchemeSaathi — Find free treatment schemes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Hind:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/app.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="#0B4F4A"/>
+        <path d="M20 10v20M10 20h20" stroke="#F6F2EA" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-mark" data-i18n="appName">SchemeSaathi</span>
+        <span class="brand-tagline" data-i18n="tagline">Find every free treatment scheme you qualify for</span>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-btn active" data-view="home" data-i18n="navAbout">About</button>
+      <button class="nav-btn" data-view="check" data-i18n="navCheck">Check schemes</button>
+      <button class="nav-btn" data-view="hospitals" id="navHospitalsDirectBtn" data-i18n="navHospitals">Find hospitals</button>
+      <select class="lang-select" id="langSelect" aria-label="Language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="te">తెలుగు</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HOME VIEW -->
+  <section id="view-home" class="view active">
+
+    <div class="hero-section">
+      <div class="hero-content">
+        <span class="hero-kicker">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1 4 2 .5-1 2-2 4-2 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9z" fill="#C4790A"/></svg>
+          <span data-i18n="heroKicker">Trusted by families across Telangana</span>
+        </span>
+        <h1 data-i18n="heroTitle">Free surgery and treatment schemes, made simple</h1>
+        <p data-i18n="heroBody">Answer a few questions about your family and we'll show you every government or insurance scheme that could cover your treatment, in your language.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" id="heroStartBtn" data-i18n="startCheck">Check my eligibility</button>
+        </div>
+      </div>
+
+      <div class="hero-illustration" aria-hidden="true">
+        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg">
+          <!-- background blob -->
+          <ellipse cx="240" cy="230" rx="220" ry="180" fill="#E6EFEC"/>
+          <!-- hospital building -->
+          <rect x="150" y="150" width="180" height="150" rx="6" fill="#FFFFFF" stroke="#0B4F4A" stroke-width="3"/>
+          <rect x="150" y="150" width="180" height="34" fill="#0B4F4A"/>
+          <path d="M228 155v24M216 167h24" stroke="#F6F2EA" stroke-width="4" stroke-linecap="round"/>
+          <!-- windows -->
+          <rect x="168" y="200" width="26" height="26" rx="3" fill="#E6EFEC" stroke="#0B4F4A" stroke-width="2"/>
+          <rect x="212" y="200" width="26" height="26" rx="3" fill="#FBF0DD" stroke="#C4790A" stroke-width="2"/>
+          <rect x="256" y="200" width="26" height="26" rx="3" fill="#E6EFEC" stroke="#0B4F4A" stroke-width="2"/>
+          <rect x="300" y="200" width="14" height="26" rx="3" fill="#E6EFEC" stroke="#0B4F4A" stroke-width="2"/>
+          <rect x="168" y="244" width="26" height="26" rx="3" fill="#E6EFEC" stroke="#0B4F4A" stroke-width="2"/>
+          <rect x="212" y="244" width="26" height="26" rx="3" fill="#E6EFEC" stroke="#0B4F4A" stroke-width="2"/>
+          <!-- door -->
+          <rect x="256" y="252" width="34" height="48" fill="#0B4F4A"/>
+          <!-- ambulance-ish accent stripe -->
+          <rect x="150" y="292" width="180" height="8" fill="#C4790A" opacity="0.5"/>
+          <!-- family figures -->
+          <g>
+            <circle cx="95" cy="270" r="16" fill="#0B4F4A"/>
+            <rect x="79" y="288" width="32" height="52" rx="14" fill="#0B4F4A"/>
+          </g>
+          <g>
+            <circle cx="140" cy="282" r="12" fill="#C4790A"/>
+            <rect x="128" y="296" width="24" height="40" rx="11" fill="#C4790A"/>
+          </g>
+          <g>
+            <circle cx="385" cy="272" r="15" fill="#14675F"/>
+            <rect x="370" y="290" width="30" height="50" rx="13" fill="#14675F"/>
+          </g>
+          <!-- caring hands / heart accent -->
+          <circle cx="240" cy="360" r="22" fill="#B4483F" opacity="0.12"/>
+          <path d="M240 372s-14-9-19-18c-5-9-1-19 9-19 4 0 8 2 10 6 2-4 6-6 10-6 10 0 14 10 9 19-5 9-19 18-19 18z" fill="#B4483F"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div>
+        <span class="stat-number">6+</span>
+        <span class="stat-label" data-i18n="statPatients">Government &amp; private schemes tracked</span>
+      </div>
+      <div>
+        <span class="stat-number">14+</span>
+        <span class="stat-label" data-i18n="statHospitals">Empanelled hospitals listed</span>
+      </div>
+      <div>
+        <span class="stat-number">3</span>
+        <span class="stat-label" data-i18n="statLanguages">Languages supported</span>
+      </div>
+    </div>
+
+    <div class="how-it-works">
+      <h2 class="section-heading" data-i18n="howItWorksTitle">How it works</h2>
+      <div class="steps-row">
+        <div class="step-item">
+          <span class="step-num">1</span>
+          <h3 data-i18n="step1Title">Tell us about the patient</h3>
+          <p data-i18n="step1Body">A few details about health, income and family — takes under 2 minutes.</p>
+        </div>
+        <div class="step-item">
+          <span class="step-num">2</span>
+          <h3 data-i18n="step2Title">See matching schemes</h3>
+          <p data-i18n="step2Body">We check every scheme's rules and explain exactly why you qualify.</p>
+        </div>
+        <div class="step-item">
+          <span class="step-num">3</span>
+          <h3 data-i18n="step3Title">Find a hospital</h3>
+          <p data-i18n="step3Body">Get contact numbers and directions to hospitals that accept that scheme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECK / FORM VIEW -->
+  <section id="view-check" class="view">
+    <div class="form-shell">
+
+      <div class="form-progress">
+        <span id="formProgressLabel">Step 1 / 2</span>
+        <div class="form-progress-bar"><div class="form-progress-fill" id="formProgressFill"></div></div>
+      </div>
+
+      <form id="eligibilityForm">
+
+        <!-- STEP 1: Patient details -->
+        <div class="form-step" id="formStep1">
+          <div class="form-section">
+            <h2 data-i18n="patientDetailsTitle">Patient details</h2>
+            <p class="form-section-sub" data-i18n="patientDetailsSub">This helps hospitals and helpline staff assist you faster. Nothing is shared without your consent.</p>
+
+            <div class="field">
+              <label for="patientName" data-i18n="fieldPatientName">Patient's full name</label>
+              <input type="text" id="patientName" required>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="patientAge" data-i18n="fieldAge">Age</label>
+                <input type="number" id="patientAge" min="0" max="120">
+              </div>
+              <div class="field">
+                <label data-i18n="fieldGender">Gender</label>
+                <div class="radio-group inline">
+                  <label class="radio-option"><input type="radio" name="gender" value="male"><span data-i18n="genderMale">Male</span></label>
+                  <label class="radio-option"><input type="radio" name="gender" value="female"><span data-i18n="genderFemale">Female</span></label>
+                  <label class="radio-option"><input type="radio" name="gender" value="other"><span data-i18n="genderOther">Other</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="patientContact" data-i18n="fieldContact">Contact number</label>
+              <input type="tel" id="patientContact" placeholder="10-digit mobile number">
+            </div>
+
+            <div class="field">
+              <label for="patientCondition" data-i18n="fieldCondition">Briefly describe the health condition</label>
+              <textarea id="patientCondition" data-i18n-placeholder="fieldConditionPlaceholder" placeholder="e.g. Father needs a heart bypass surgery, doctor advised admission this week"></textarea>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <span></span>
+            <button type="button" class="btn-primary" id="step1NextBtn" data-i18n="submitBtn">Continue</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Eligibility details -->
+        <div class="form-step" id="formStep2" style="display:none;">
+          <div class="form-section">
+            <h2 data-i18n="eligibilitySectionTitle">Eligibility details</h2>
+            <p class="form-section-sub" data-i18n="eligibilitySectionSub">This decides which schemes you may qualify for.</p>
+
+            <div class="field">
+              <label for="stateSelect" data-i18n="formState">State of residence</label>
+              <select id="stateSelect" required></select>
+            </div>
+
+            <div class="field">
+              <label for="incomeInput" data-i18n="formIncome">Approximate yearly family income (₹)</label>
+              <input type="number" id="incomeInput" min="0" step="1000" required>
+            </div>
+
+            <div class="field">
+              <label data-i18n="formRation">Ration card type</label>
+              <div class="radio-group">
+                <label class="radio-option checked"><input type="radio" name="ration" value="none" checked><span data-i18n="formRationNone">No ration card</span></label>
+                <label class="radio-option"><input type="radio" name="ration" value="white"><span data-i18n="formRationWhite">White card</span></label>
+                <label class="radio-option"><input type="radio" name="ration" value="pink"><span data-i18n="formRationPink">Pink card</span></label>
+                <label class="radio-option"><input type="radio" name="ration" value="antyodaya"><span data-i18n="formRationAntyodaya">Antyodaya card</span></label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label data-i18n="formEmployment">Employment status</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="employment" value="central_govt"><span data-i18n="empCentralGovt">Central government employee</span></label>
+                <label class="radio-option"><input type="radio" name="employment" value="state_govt"><span data-i18n="empStateGovt">Telangana state government employee</span></label>
+                <label class="radio-option"><input type="radio" name="employment" value="journalist"><span data-i18n="empJournalist">Accredited journalist</span></label>
+                <label class="radio-option"><input type="radio" name="employment" value="private_low"><span data-i18n="empPrivateLow">Private job, salary under ₹21,000/month</span></label>
+                <label class="radio-option"><input type="radio" name="employment" value="private_high"><span data-i18n="empPrivateHigh">Private job, salary above ₹21,000/month</span></label>
+                <label class="radio-option checked"><input type="radio" name="employment" value="unemployed" checked><span data-i18n="empUnemployed">Not employed / daily wage / farmer</span></label>
+                <label class="radio-option"><input type="radio" name="employment" value="retired"><span data-i18n="empRetired">Retired / pensioner</span></label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label data-i18n="formPolicy">Do you already have a private health insurance policy?</label>
+              <div class="radio-group">
+                <label class="radio-option checked"><input type="radio" name="policy" value="none" checked><span data-i18n="policyNone">No private insurance</span></label>
+                <label class="radio-option"><input type="radio" name="policy" value="star_health"><span data-i18n="policyStar">Yes, Star Health</span></label>
+                <label class="radio-option"><input type="radio" name="policy" value="other"><span data-i18n="policyOther">Yes, another company</span></label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="procedureSelect" data-i18n="formProcedure">What treatment or surgery is needed?</label>
+              <select id="procedureSelect">
+                <option value="cardiac" data-i18n="procCardiac">Heart / cardiac surgery</option>
+                <option value="cancer" data-i18n="procCancer">Cancer treatment</option>
+                <option value="kidney" data-i18n="procKidney">Kidney / dialysis / transplant</option>
+                <option value="orthopedic" data-i18n="procOrtho">Bone / joint / orthopedic surgery</option>
+                <option value="neurology" data-i18n="procNeuro">Brain / nerve / neurology</option>
+                <option value="general_surgery" data-i18n="procGeneral">General surgery</option>
+                <option value="maternity" data-i18n="procMaternity">Maternity / childbirth</option>
+                <option value="other" data-i18n="procOther">Other / not sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn-secondary" id="step2BackBtn" data-i18n="startOver">Back</button>
+            <button type="submit" class="btn-primary" data-i18n="submitBtn">Show my eligible schemes</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- RESULTS VIEW -->
+  <section id="view-results" class="view">
+    <div class="results-header">
+      <h2 id="resultsHeading" data-i18n="resultsTitle">Schemes you may be eligible for</h2>
+      <div style="display:flex;gap:10px;">
+        <button class="btn-secondary" id="printResultsBtn" data-i18n="printResults">Print / save this page</button>
+        <button class="btn-secondary" id="startOverBtn" data-i18n="startOver">Start over</button>
+      </div>
+    </div>
+    <div class="patient-summary-card" id="patientSummary" style="display:none;"></div>
+    <div id="resultsContainer"></div>
+    <div class="disclaimer-box">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v5M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <div>
+        <strong data-i18n="disclaimerTitle">Important</strong>
+        <span data-i18n="disclaimer">This tool gives an estimate based on the information you entered. Final approval always depends on the scheme authority or hospital. This is not a government website.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOSPITALS VIEW -->
+  <section id="view-hospitals" class="view">
+    <h2 class="section-heading" style="text-align:left;" data-i18n="hospitalsTitle">Hospitals near you</h2>
+    <p id="hospitalsSubtitle" style="color:var(--ink-soft);display:none;"></p>
+    <div class="hospitals-controls">
+      <label for="cityFilter" data-i18n="filterByCity" style="align-self:center;">Filter by city</label>
+      <select id="cityFilter"></select>
+    </div>
+    <div id="hospitalsContainer"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p data-i18n="footerText">Built to help patients find free treatment options. Always verify with official sources before making medical decisions.</p>
+    <div class="footer-badges">
+      <span class="footer-badge" data-i18n="trustBadge1">Not a government website — an independent guide</span>
+      <span class="footer-badge" data-i18n="trustBadge2">Your data stays on this device</span>
+    </div>
+  </div>
+</footer>
+
+<script src="src/data/embedded_data.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
